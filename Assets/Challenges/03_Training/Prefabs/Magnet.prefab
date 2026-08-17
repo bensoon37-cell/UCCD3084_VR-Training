@@ -523,6 +523,7 @@ GameObject:
   - component: {fileID: 1145393437596168905}
   - component: {fileID: 1385512377}
   - component: {fileID: 1385512376}
+  - component: {fileID: 9113868477443210031}
   m_Layer: 0
   m_Name: Magnet
   m_TagString: Untagged
@@ -708,6 +709,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 699fed2e9064d4837b53e32761c7ed09, type: 3}
   - {fileID: 8300000, guid: b363ab762008648578a83c71060e942d, type: 3}
   - {fileID: 8300000, guid: fbc901b810b8941d0806f70c2774c399, type: 3}
+--- !u!114 &9113868477443210031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7444192913978105925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7f3168ac784c1eb9625c181338661d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inactiveColor: {r: 0.8, g: 0.08, b: 0.05, a: 1}
+  activeColor: {r: 0.05, g: 0.85, b: 0.18, a: 1}
+  stateRenderer: {fileID: 1362607767981526524}
+  socket: {fileID: 8809783913527004432}
+  liftParticles: {fileID: 0}
 --- !u!1 &7444192914862785116
 GameObject:
   m_ObjectHideFlags: 0
