@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -36,7 +35,8 @@ public sealed class Member3VRFeatures : MonoBehaviour
 
     private void Update()
     {
-        bool pressed = Keyboard.current != null && Keyboard.current.vKey.wasPressedThisFrame;
+        bool pressed = UnityEngine.InputSystem.Keyboard.current != null &&
+            UnityEngine.InputSystem.Keyboard.current.vKey.wasPressedThisFrame;
         controllers.Clear();
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Controller, controllers);
         bool primaryPressed = false;
