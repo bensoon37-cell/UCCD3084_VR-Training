@@ -11,7 +11,7 @@ public sealed class Member3VRFeatures : MonoBehaviour
     private const string TrainingScene = "Training_Prototype_Broken";
     private const string VignettePreference = "Member3.VignetteEnabled";
     private readonly Dictionary<Rigidbody, Pose> initialPoses = new Dictionary<Rigidbody, Pose>();
-    private readonly List<InputDevice> controllers = new List<InputDevice>();
+    private readonly List<UnityEngine.XR.InputDevice> controllers = new List<UnityEngine.XR.InputDevice>();
     private TunnelingVignetteController vignette;
     private bool primaryButtonWasPressed;
 
@@ -40,7 +40,7 @@ public sealed class Member3VRFeatures : MonoBehaviour
         controllers.Clear();
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Controller, controllers);
         bool primaryPressed = false;
-        foreach (InputDevice controller in controllers)
+        foreach (UnityEngine.XR.InputDevice controller in controllers)
         {
             if (controller.TryGetFeatureValue(CommonUsages.primaryButton, out bool value) && value)
                 primaryPressed = true;
