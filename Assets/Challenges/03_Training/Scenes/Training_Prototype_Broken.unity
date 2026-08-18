@@ -26682,6 +26682,7 @@ GameObject:
   - component: {fileID: 14}
   - component: {fileID: 1145393436748058494}
   - component: {fileID: 1145393436748058495}
+  - component: {fileID: 9113868477443210032}
   m_Layer: 0
   m_Name: Magnet
   m_TagString: Untagged
@@ -26689,6 +26690,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9113868477443210032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541936462315295362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7f3168ac784c1eb9625c181338661d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inactiveColor: {r: 0.8, g: 0.08, b: 0.05, a: 1}
+  activeColor: {r: 0.05, g: 0.85, b: 0.18, a: 1}
+  stateRenderer: {fileID: 2093529276241526587}
+  socket: {fileID: 8477993898470408151}
+  liftParticles: {fileID: 0}
 --- !u!4 &7541936462315295365
 Transform:
   m_ObjectHideFlags: 0
