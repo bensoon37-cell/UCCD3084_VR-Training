@@ -12,12 +12,13 @@ public sealed class Member3MagnetFeedback : MonoBehaviour
 
     private static readonly int BaseColorId = Shader.PropertyToID("_BaseColor");
     private static readonly int ColorId = Shader.PropertyToID("_Color");
-    private readonly MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
+    private MaterialPropertyBlock propertyBlock;
     private bool lastActive;
     private bool lastLifting;
 
     private void Awake()
     {
+        propertyBlock = new MaterialPropertyBlock();
         if (socket == null) socket = GetComponentInChildren<XRSocketInteractor>(true);
         if (stateRenderer == null)
         {
